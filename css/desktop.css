@@ -15,19 +15,194 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300;400&display=swap');
 
-:root {}
+:root {
+    --main-color: rgb(32, 32, 32);
+    --darker-color: rgb(24, 24, 24);
+    --lighter-color: rgb(46, 46, 46);
+    --font-color: rgb(231, 231, 231);
+    --accent-color: rgb(238, 219, 113);
+}
+
+* {
+    color: var(--font-color);
+}
 
 body {
+    background-color: var(--main-color);
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
+main {
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
 .big-title {
+    margin: 3rem;
+    margin-left: -10%;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    font-size: 2rem;
+    width: 120%;
+    border-bottom: 2px solid var(--font-color);
 }
 
 .smol-title {
     font-family: 'Raleway', sans-serif;
+    margin: 3rem;
+    margin-left: -5%;
     font-weight: 300;
+    font-size: 1.5rem;
+    width: 110%;
+    border-bottom: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.very-smol-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: var(--accent-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+header iframe {
+    margin: 0;
+    width: 100vw;
+    border: none;
+    height: 3rem;
+    transition: height .5s;
+}
+
+header iframe:hover {
+    height: 5rem;
+    transition: height .5s;
+}
+
+header {
+    margin: 0;
+    width: 100vw;
+}
+
+main ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+main li {
+    margin: .5rem;
+}
+
+img.icon {
+    vertical-align: middle;
+    height: 2rem;
+}
+
+.gauge-90:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 9rem;
+}
+
+.gauge-70:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 7rem;
+}
+
+.gauge-60:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 6rem;
+}
+
+.gauge-20:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 2rem;
+}
+
+.gauge-90,
+.gauge-70,
+.gauge-60,
+.gauge-20 {
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1.2rem;
+    background-color: var(--darker-color);
+    width: 10rem;
+}
+
+
+
+.nav-header li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.nav-header {
+    background-color: var(--darker-color);
+    vertical-align: middle;
+}
+
+.nav-header ul {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.nav-header li {
+    display: inline-block;
+    flex: 1;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-header a {
+    text-decoration: none;
+    display: block;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 40vh;
+    text-align: center;
+    width: 100%;
+    transition: letter-spacing .75s, background-color .75s;
+}
+
+.nav-header a:hover {
+    transition: letter-spacing .75s, background-color .75s, color .75s;
+    letter-spacing: .15rem;
+    background-color: var(--lighter-color);
+}
+
+.nav-header a>div {
+    transition: color .75s;
+}
+
+.nav-header a:hover>div {
+    color: var(--accent-color);
+    transition: color .75s;
 }
