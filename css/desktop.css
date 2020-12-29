@@ -36,8 +36,7 @@ body {
 
 main {
     width: 70vw;
-    margin: 0 auto;
-    margin-top: 6rem;
+    margin: 6rem auto;
 }
 
 .big-title {
@@ -50,7 +49,7 @@ main {
     border-bottom: 2px solid var(--font-color);
 }
 
-.index .smol-title {
+.smol-title {
     font-family: 'Raleway', sans-serif;
     margin: 3rem;
     margin-left: -5%;
@@ -171,7 +170,7 @@ article {
     transition: background-size .25s, border-color .25s;
 }
 
-article .smol-title a {
+.article-title a {
     color: var(--accent-color);
 }
 
@@ -189,6 +188,38 @@ article:hover {
     background-image: url("../bg/reserv-ticket.png");
 }
 
+#news {
+    background-image: url("../bg/news.png");
+}
+
+#cpoa {
+    background-image: url("../bg/cpoa.png");
+}
+
+#tutS2 {
+    background-image: url("../bg/tutS2.png");
+}
+
+#javaS2 {
+    background-image: url("../bg/javaS2.png");
+}
+
+#sqlS2 {
+    background-image: url("../bg/sqlS2.png");
+}
+
+#asmS2 {
+    background-image: url("../bg/asmS2.png");
+}
+
+#nim {
+    background-image: url("../bg/nim.png");
+}
+
+#pulse {
+    background-image: url("../bg/pulse.png");
+}
+
 .label {
     display: inline-block;
     border-radius: 1rem;
@@ -202,7 +233,7 @@ article:hover {
 }
 
 .ui {
-    background-color: rgb(233, 216, 68);
+    background-color: rgb(255, 241, 118);
     color: var(--darker-color);
 }
 
@@ -246,6 +277,40 @@ article:hover {
     color: var(--font-color);
 }
 
+.html-css {
+    background-color: rgb(206, 47, 41);
+    color: var(--font-color);
+}
+
+.web {
+    background-color: rgb(238, 129, 180);
+    color: var(--darker-color);
+}
+
+.js {
+    background-color: rgb(255, 230, 0);
+    color: var(--darker-color);
+}
+
+.java {
+    background-color: rgb(255, 112, 112);
+    color: var(--darker-color);
+}
+
+.game {
+    background-color: rgb(0, 255, 213);
+    color: var(--darker-color);
+}
+
+.asm {
+    background-color: rgb(3, 0, 39);
+    color: var(--font-color);
+}
+
+.p8086 {
+    background-color: rgb(0, 12, 117);
+    color: var(--accent-color);
+}
 
 .nav-header li {
     font-family: 'Raleway', sans-serif;
