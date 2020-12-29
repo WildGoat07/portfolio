@@ -98,6 +98,22 @@ main li {
     margin: .5rem;
 }
 
+.float-right {
+    float: right;
+}
+
+img.float-right {
+    height: 12rem;
+}
+
+p {
+    overflow: hidden;
+}
+
+.centered {
+    text-align: center;
+}
+
 img.icon {
     vertical-align: middle;
     height: 2rem;
@@ -365,19 +381,4 @@ article:hover {
 .nav-header a:hover>div {
     color: var(--accent-color);
     transition: color .75s;
-}
-
-.nav-header #lang {
-    flex: 3;
-}
-
-.nav-header #lang img {
-    width: 3rem;
-    margin-right: 1rem;
-    transition: width .25s;
-}
-
-.nav-header #lang:hover img {
-    width: 4rem;
-    transition: width .75s;
 }
