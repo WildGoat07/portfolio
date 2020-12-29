@@ -50,7 +50,7 @@ main {
     border-bottom: 2px solid var(--font-color);
 }
 
-.smol-title {
+.index .smol-title {
     font-family: 'Raleway', sans-serif;
     margin: 3rem;
     margin-left: -5%;
@@ -77,7 +77,7 @@ header iframe {
     width: 100vw;
     border: none;
     height: 3rem;
-    transition: height .5s;
+    transition: height .15s;
 }
 
 header iframe:hover {
@@ -102,6 +102,15 @@ main li {
 img.icon {
     vertical-align: middle;
     height: 2rem;
+}
+
+.gauge-100:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 10rem;
 }
 
 .gauge-90:before {
@@ -140,6 +149,7 @@ img.icon {
     width: 2rem;
 }
 
+.gauge-100,
 .gauge-90,
 .gauge-70,
 .gauge-60,
@@ -151,6 +161,90 @@ img.icon {
     width: 10rem;
 }
 
+article {
+    border: transparent 1px solid;
+    margin: 1rem -2rem;
+    padding: 0rem 1rem 2rem 1rem;
+    width: calc(100%+4rem);
+    background-size: 100%;
+    background-position: 50%;
+    transition: background-size .25s, border-color .25s;
+}
+
+article .smol-title a {
+    color: var(--accent-color);
+}
+
+article:hover {
+    transition: background-size .75s, border-color .75s;
+    border: var(--accent-color) 1px solid;
+    background-size: 120%;
+}
+
+#tutS3 {
+    background-image: url("../bg/tutS3.png");
+}
+
+#reserv-ticket {
+    background-image: url("../bg/reserv-ticket.png");
+}
+
+.label {
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 0 .75rem;
+    margin: 0 .5rem;
+}
+
+.api {
+    background-color: rgb(35, 223, 113);
+    color: var(--darker-color);
+}
+
+.ui {
+    background-color: rgb(233, 216, 68);
+    color: var(--darker-color);
+}
+
+.csharp {
+    background-color: rgb(140, 23, 187);
+    color: var(--font-color);
+}
+
+.php {
+    background-color: rgb(98, 195, 233);
+    color: var(--darker-color);
+}
+
+.sql {
+    background-color: rgb(241, 103, 223);
+    color: var(--darker-color);
+}
+
+.win {
+    background-color: rgb(11, 116, 214);
+    color: var(--font-color);
+}
+
+.console {
+    background-color: rgb(54, 54, 54);
+    color: var(--accent-color);
+}
+
+.c {
+    background-color: rgb(34, 46, 100);
+    color: var(--font-color);
+}
+
+.network {
+    background-color: rgb(255, 111, 92);
+    color: var(--darker-color);
+}
+
+.linux {
+    background-color: rgb(0, 0, 0);
+    color: var(--font-color);
+}
 
 
 .nav-header li {
@@ -160,6 +254,7 @@ img.icon {
 }
 
 .nav-header {
+    overflow: hidden;
     background-color: var(--darker-color);
     vertical-align: middle;
 }
@@ -174,7 +269,7 @@ img.icon {
 
 .nav-header li {
     display: inline-block;
-    flex: 1;
+    flex: 5;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -189,7 +284,7 @@ img.icon {
     padding-top: 40vh;
     text-align: center;
     width: 100%;
-    transition: letter-spacing .75s, background-color .75s;
+    transition: letter-spacing .25s, background-color .25s;
 }
 
 .nav-header a:hover {
@@ -199,10 +294,25 @@ img.icon {
 }
 
 .nav-header a>div {
-    transition: color .75s;
+    transition: color .25s;
 }
 
 .nav-header a:hover>div {
     color: var(--accent-color);
     transition: color .75s;
+}
+
+.nav-header #lang {
+    flex: 3;
+}
+
+.nav-header #lang img {
+    width: 3rem;
+    margin-right: 1rem;
+    transition: width .25s;
+}
+
+.nav-header #lang:hover img {
+    width: 4rem;
+    transition: width .75s;
 }
