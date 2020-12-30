@@ -1,0 +1,318 @@
+<!--
+    Copyright 2021 Nathan HANEN
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>
+            Nathan HANEN
+        </title>
+        <script type="text/javascript" src="./scripts/mobile.js"></script>
+        <script type="text/javascript">
+            var style = document.createElement('link');
+            style.setAttribute("rel", "stylesheet");
+            style.setAttribute("href", mobileCheck() ? "./css/mobile.css" : "./css/desktop.css");
+            document.head.appendChild(style);
+        </script>
+    </head>
+    <body>
+        <header>
+            <iframe src="./nav.html"></iframe>
+        </header>
+        <main>
+            <h1 class="big-title">
+                Projets scolaires
+            </h1>
+            <p>
+                Une liste de tous les projets réalisés à ce jour (Janvier 2021) dans le cadre du DUT Informatique :
+            </p>
+            <article id="infobot">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/InfoBot" target="_blank">
+                        Infobot
+                    </a>
+                </h2>
+                <p>
+                    Développement d'un bot pour un serveur Discord de la promotion du DUT Informatique permettant de multiples fonctionnalités comme voir l'emploi du temps.
+                </p>
+                <p>
+                    Travail en solitaire
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label csharp">
+                        C#
+                    </span>
+                    <span class="label win">
+                        Windows
+                    </span>
+                    <span class="label linux">
+                        Linux
+                    </span>
+                </div>
+            </article>
+            <article id="expdir-net">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/expdir.NET" target="_blank">
+                        expdir.NET
+                    </a>
+                </h2>
+                <p>
+                    Logiciel "explorateur de fichier" en console permettant de changer très rapidement le dossier courant du terminal.
+                </p>
+                <p>
+                    Travail en solitaire
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label console">
+                        Console
+                    </span>
+                    <span class="label csharp">
+                        C#
+                    </span>
+                    <span class="label win">
+                        Windows
+                    </span>
+                    <span class="label linux">
+                        Linux
+                    </span>
+                </div>
+            </article>
+            <article id="wildgoat-api">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/Wildgoat-API" target="_blank">
+                        Wildgoat API
+                    </a>
+                </h2>
+                <p>
+                    API utilisée par <a target="_blank" href="https://github.com/WildGoat07/InfoBot">Infobot</a>. Permet entre autres de générer des tableaux (images) en php, générer une image d'un ICal (emploi du temps) et autres.
+                    Exemple de la <a target="_blank" href="http://wildgoat.fr/api/ical-png.php?url=https%3A%2F%2Fdptinfo.iutmetz.univ-lorraine.fr%2Flna%2Fagendas%2Fical.php%3Fical%3D4352c5485001785&regex=%2F(%3F%3A%5E.*%20-%20(.*)%20-%20.*%20-%20.*%20-%20.*%24)%7C(%3F%3A%5E(.*)%20-%20.*%20-%20.*%20-%20.*%24)%2F">semaine actuelle</a>, ou de la
+                    <a target="_blank" href="http://wildgoat.fr/api/ical-png.php?url=https%3A%2F%2Fdptinfo.iutmetz.univ-lorraine.fr%2Flna%2Fagendas%2Fical.php%3Fical%3D4352c5485001785&regex=%2F(%3F%3A%5E.*%20-%20(.*)%20-%20.*%20-%20.*%20-%20.*%24)%7C(%3F%3A%5E(.*)%20-%20.*%20-%20.*%20-%20.*%24)%2F&offset=1">semaine prochaine</a>.
+                </p>
+                <p>
+                    Travail en solitaire
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label api">
+                        API
+                    </span>
+                    <span class="label php">
+                        PHP
+                    </span>
+                </div>
+            </article>
+            <article id="audiorec">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/audio-recorder" target="_blank">
+                        Audio Recorder
+                    </a>
+                </h2>
+                <p>
+                    Logiciel permettant d'enregistrer les <i>x</i> dernière minutes d'un périphérique audio.
+                </p>
+                <p>
+                    Travail en groupe avec <a href="https://github.com/oxypomme" target="_blank">OxyTom</a>.
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label ui">
+                        Interface
+                    </span>
+                    <span class="label console">
+                        Console
+                    </span>
+                    <span class="label csharp">
+                        C#
+                    </span>
+                    <span class="label win">
+                        Windows
+                    </span>
+                </div>
+            </article>
+            <article id="expdir">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/expdir" target="_blank">
+                        expdir
+                    </a>
+                </h2>
+                <p>
+                    Portage de
+                    <a href="https://github.com/WildGoat07/expdir.NET" target="_blank">
+                        expdir.NET
+                    </a>
+                    en langage C, pour les systèmes Unix sans la nécéssité d'avoir le runtime NetCore 3.1
+                </p>
+                <p>
+                    Travail en solitaire
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label console">
+                        Console
+                    </span>
+                    <span class="label c">
+                        C
+                    </span>
+                    <span class="label linux">
+                        Linux
+                    </span>
+                </div>
+            </article>
+            <article id="portfolio">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/portfolio" target="_blank">
+                        Portfolio
+                    </a>
+                </h2>
+                <p>
+                    Tout simplement ce portfolio affiché
+                </p>
+                <p>
+                    Travail en solitaire
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label web">
+                        Web
+                    </span>
+                    <span class="label html-css">
+                        HTML/CSS
+                    </span>
+                </div>
+            </article>
+            <article id="cpanel">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/CommandsPanel" target="_blank">
+                        Commands Panel
+                    </a>
+                </h2>
+                <p>
+                    Logiciel discret util pour lancer des applications/commandes rapidement
+                </p>
+                <p>
+                    Travail en solitaire
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label ui">
+                        Interface
+                    </span>
+                    <span class="label csharp">
+                        C#
+                    </span>
+                    <span class="label win">
+                        Windows
+                    </span>
+                </div>
+            </article>
+            <article id="cmanag">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/console-management" target="_blank">
+                        Console Management
+                    </a>
+                </h2>
+                <p>
+                    Bibliothèque en C permettant d'écrire en couleurs/formatté dans la console, ainsi que de créer des tableaux visuels
+                </p>
+                <p>
+                    Travail en solitaire
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label console">
+                        Console
+                    </span>
+                    <span class="label lib">
+                        Bibliothèque
+                    </span>
+                    <span class="label c">
+                        C
+                    </span>
+                    <span class="label linux">
+                        Linux
+                    </span>
+                </div>
+            </article>
+            <article id="ila">
+                <h2 class="article-title">
+                    <a href="https://github.com/oxypomme/ILA" target="_blank">
+                        ILA 
+                    </a>
+                </h2>
+                <p>
+                    <i>Interpréteur de Langage Algorithmique</i>, logiciel permettant d'écrire en "langage algorithmique français" et pouvoir l'éxecuter ; destiné à remplacer un horrible logiciel similaire, mais très mal fait et bogué, donné aux étudiants en première année de DUT Informatique pour l'apprentissage
+                </p>
+                <p>
+                    Travail en duo avec <a href="https://github.com/oxypomme" target="_blank">OxyTom</a>
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label ui">
+                        Interface
+                    </span>
+                    <span class="label console">
+                        Console
+                    </span>
+                    <span class="label lib">
+                        Bibliothèque
+                    </span>
+                    <span class="label csharp">
+                        C#
+                    </span>
+                    <span class="label win">
+                        Windows
+                    </span>
+                    <span class="label linux">
+                        Linux (partiel)
+                    </span>
+                </div>
+            </article>
+            <article id="spleef">
+                <h2 class="article-title">
+                    <a href="https://github.com/WildGoat07/Spleef.NET" target="_blank">
+                        Spleef.NET 
+                    </a>
+                </h2>
+                <p>
+                    Petit jeu rapide créé pendant le confinement car je m'ennuyais ¯\_(ツ)_/¯
+                </p>
+                <p>
+                    Travail en solitaire
+                </p>
+                <div class="line"></div>
+                <div>
+                    <span class="label game">
+                        Jeu
+                    </span>
+                    <span class="label sfml">
+                        SFML
+                    </span>
+                    <span class="label csharp">
+                        C#
+                    </span>
+                    <span class="label win">
+                        Windows
+                    </span>
+                </div>
+            </article>
+            <p>
+                ... Et de nombreux autres projets plus anciens sans gros interêts, disponibles sur mon profil Github 😉
+            </p>
+        </main>
+    </body>
+</html>

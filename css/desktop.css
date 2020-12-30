@@ -259,6 +259,46 @@ article:hover {
     background-image: url("../bg/pulse.png");
 }
 
+#infobot {
+    background-image: url("../bg/infobot.png");
+}
+
+#expdir-net {
+    background-image: url("../bg/expdir-net.png");
+}
+
+#wildgoat-api {
+    background-image: url("../bg/wildgoat-api.png");
+}
+
+#audiorec {
+    background-image: url("../bg/audiorec.png");
+}
+
+#expdir {
+    background-image: url("../bg/expdir.png");
+}
+
+#portfolio {
+    background-image: url("../bg/portolio.png");
+}
+
+#cpanel {
+    background-image: url("../bg/cpanel.png");
+}
+
+#cmanag {
+    background-image: url("../bg/cmanag.png");
+}
+
+#ila {
+    background-image: url("../bg/ila.png");
+}
+
+#spleef {
+    background-image: url("../bg/spleef.png");
+}
+
 .label {
     display: inline-block;
     border-radius: 1rem;
@@ -349,6 +389,16 @@ article:hover {
 .p8086 {
     background-color: rgb(0, 12, 117);
     color: var(--accent-color);
+}
+
+.lib {
+    background-color: rgb(27, 87, 67);
+    color: var(--font-color);
+}
+
+.sfml {
+    background-color: rgb(145, 210, 63);
+    color: var(--font-color);
 }
 
 .nav-header li {
