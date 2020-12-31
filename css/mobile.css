@@ -15,19 +15,432 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300;400&display=swap');
 
-:root {}
+:root {
+    --main-color: rgb(32, 32, 32);
+    --darker-color: rgb(24, 24, 24);
+    --lighter-color: rgb(46, 46, 46);
+    --font-color: rgb(231, 231, 231);
+    --accent-color: rgb(238, 219, 113);
+    font-size: 1.5rem;
+}
+
+* {
+    color: var(--font-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
 
 body {
+    background-color: var(--main-color);
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
+main {
+    width: 80vw;
+    margin: 6rem auto;
+}
+
 .big-title {
+    margin: 3rem;
+    margin-left: -10%;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    font-size: 3rem;
+    width: 120%;
+    border-bottom: 2px solid var(--font-color);
 }
 
 .smol-title {
     font-family: 'Raleway', sans-serif;
+    margin: 3rem;
+    margin-left: -5%;
     font-weight: 300;
+    font-size: 2rem;
+    width: 110%;
+    border-bottom: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.very-smol-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: var(--accent-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+header iframe {
+    margin: 0;
+    width: 100vw;
+    border: none;
+    height: 5rem;
+    transition: height .15s;
+}
+
+header {
+    margin: 0;
+    width: 100vw;
+}
+
+main ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+main li {
+    margin: .5rem;
+}
+
+.float-right {
+    float: right;
+}
+
+img.float-right {
+    height: 8rem;
+}
+
+p {
+    overflow: hidden;
+}
+
+.centered {
+    text-align: center;
+}
+
+img.icon {
+    vertical-align: middle;
+    height: 2rem;
+}
+
+.gauge-100:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 10rem;
+}
+
+.gauge-90:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 9rem;
+}
+
+.gauge-70:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 7rem;
+}
+
+.gauge-60:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 6rem;
+}
+
+.gauge-20:before {
+    content: " ";
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1rem;
+    background-color: var(--accent-color);
+    width: 2rem;
+}
+
+.gauge-100,
+.gauge-90,
+.gauge-70,
+.gauge-60,
+.gauge-20 {
+    display: inline-block;
+    border-radius: .5rem;
+    height: 1.2rem;
+    background-color: var(--darker-color);
+    width: 10rem;
+}
+
+article {
+    margin: 1rem -2rem;
+    border: var(--accent-color) 1px solid;
+    padding: 0rem 1rem 2rem 1rem;
+    width: calc(100%+4rem);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.article-title a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+article .line {
+    width: 20%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--accent-color);
+    margin-bottom: 1rem;
+    transition: width .25s;
+}
+
+article:hover .line {
+    width: 100%;
+    transition: width .5s;
+}
+
+#tutS3 {
+    background-image: url("../bg/tutS3.png");
+}
+
+#reserv-ticket {
+    background-image: url("../bg/reserv-ticket.png");
+}
+
+#news {
+    background-image: url("../bg/news.png");
+}
+
+#cpoa {
+    background-image: url("../bg/cpoa.png");
+}
+
+#tutS2 {
+    background-image: url("../bg/tutS2.png");
+}
+
+#javaS2 {
+    background-image: url("../bg/javaS2.png");
+}
+
+#sqlS2 {
+    background-image: url("../bg/sqlS2.png");
+}
+
+#asmS2 {
+    background-image: url("../bg/asmS2.png");
+}
+
+#nim {
+    background-image: url("../bg/nim.png");
+}
+
+#pulse {
+    background-image: url("../bg/pulse.png");
+}
+
+#infobot {
+    background-image: url("../bg/infobot.png");
+}
+
+#expdir-net {
+    background-image: url("../bg/expdir-net.png");
+}
+
+#wildgoat-api {
+    background-image: url("../bg/wildgoat-api.png");
+}
+
+#audiorec {
+    background-image: url("../bg/audiorec.png");
+}
+
+#expdir {
+    background-image: url("../bg/expdir.png");
+}
+
+#portfolio {
+    background-image: url("../bg/portolio.png");
+}
+
+#cpanel {
+    background-image: url("../bg/cpanel.png");
+}
+
+#cmanag {
+    background-image: url("../bg/cmanag.png");
+}
+
+#ila {
+    background-image: url("../bg/ila.png");
+}
+
+#spleef {
+    background-image: url("../bg/spleef.png");
+}
+
+.label {
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 0 .75rem;
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.api {
+    background-color: rgb(35, 223, 113);
+    color: var(--darker-color);
+}
+
+.ui {
+    background-color: rgb(255, 241, 118);
+    color: var(--darker-color);
+}
+
+.csharp {
+    background-color: rgb(140, 23, 187);
+    color: var(--font-color);
+}
+
+.php {
+    background-color: rgb(98, 195, 233);
+    color: var(--darker-color);
+}
+
+.sql {
+    background-color: rgb(241, 103, 223);
+    color: var(--darker-color);
+}
+
+.win {
+    background-color: rgb(11, 116, 214);
+    color: var(--font-color);
+}
+
+.console {
+    background-color: rgb(54, 54, 54);
+    color: var(--accent-color);
+}
+
+.c {
+    background-color: rgb(34, 46, 100);
+    color: var(--font-color);
+}
+
+.network {
+    background-color: rgb(255, 111, 92);
+    color: var(--darker-color);
+}
+
+.linux {
+    background-color: rgb(0, 0, 0);
+    color: var(--font-color);
+}
+
+.html-css {
+    background-color: rgb(206, 47, 41);
+    color: var(--font-color);
+}
+
+.web {
+    background-color: rgb(238, 129, 180);
+    color: var(--darker-color);
+}
+
+.js {
+    background-color: rgb(255, 230, 0);
+    color: var(--darker-color);
+}
+
+.java {
+    background-color: rgb(255, 112, 112);
+    color: var(--darker-color);
+}
+
+.game {
+    background-color: rgb(0, 255, 213);
+    color: var(--darker-color);
+}
+
+.asm {
+    background-color: rgb(3, 0, 39);
+    color: var(--font-color);
+}
+
+.p8086 {
+    background-color: rgb(0, 12, 117);
+    color: var(--accent-color);
+}
+
+.lib {
+    background-color: rgb(27, 87, 67);
+    color: var(--font-color);
+}
+
+.sfml {
+    background-color: rgb(145, 210, 63);
+    color: var(--font-color);
+}
+
+.nav-header li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.nav-header {
+    overflow: hidden;
+    background-color: var(--darker-color);
+    vertical-align: middle;
+}
+
+.nav-header ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.nav-header li {
+    display: block;
+    flex: 5;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 20vh;
+    text-align: center;
+    transition: letter-spacing .25s, background-color .25s;
+}
+
+.nav-header a:hover {
+    transition: letter-spacing .75s, background-color .75s, color .75s;
+    letter-spacing: .15rem;
+    background-color: var(--lighter-color);
+}
+
+.nav-header a>div {
+    transition: color .25s;
+}
+
+.nav-header a:hover>div {
+    color: var(--accent-color);
+    transition: color .75s;
 }
